@@ -29,8 +29,7 @@
       - ipython
       - pexpect
       - pre-commit
+      - black
+      - isort
   loop_control:
     loop_var: package_name
-
-- name: Update fonts
-  ansible.builtin.shell: sudo fc-cache -v
