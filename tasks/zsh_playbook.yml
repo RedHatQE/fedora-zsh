@@ -45,7 +45,7 @@
   become: true
 
 - name: Apply fonts
-  ansible.builtin.shell: fc-cache -v
+  ansible.builtin.shell: sudo fc-cache -v
 
 - name: clone powerlevel10k zsh theme
   ansible.builtin.git:
